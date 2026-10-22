@@ -3,7 +3,7 @@
 **Sample**
 id: uuid
 clinic: string, name of the clinic the sample came from
-submitter_id: string, id of the technician that submitted the sample
+submitted_by: integer, id of the technician that submitted the sample
 stage: ENUM, the current processing stage
 created_at: timestamp, when sample entered the system
 updated_at: timestamp, when the sample was last updated
@@ -17,7 +17,7 @@ role: ENUM, tech reviewer or administrator
 id: uuid
 sample_id: sample_id
 performed_by: user_id
-type: string, the processing event type
+event_type: string, the processing event type
 performed_at: timestamp
 
 **QCFinding**
